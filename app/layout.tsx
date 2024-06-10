@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Script from "next/script";
+import HeaderNav from "@/components/HeaderNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/css/bootstrap.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/responsive.css" />
+        <link rel="icon" href="/images/fevicon.png" type="image/gif" />
+        <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css" />
+        <link
+          rel="stylesheet"
+          href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+          media="screen"
+        />
+        <link rel="stylesheet" href="/css/meanmenu.css" />
+      </head>
+      <body className={inter.className}>
+        <HeaderNav />
+        {children}
+        <Footer />
+      </body>
+      <Script src="/js/jquery.min.js" />
+      <Script src="/js/bootstrap.bundle.min.js" />
+      <Script src="/js/jquery-3.0.0.min.js" />
+      <Script src="/js/jquery.mCustomScrollbar.concat.min.js" />
+      <Script src="/js/custom.js" />
+      <Script src="/js/bootstrap.js" />
     </html>
   );
 }
