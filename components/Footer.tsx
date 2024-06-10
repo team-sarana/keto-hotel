@@ -17,7 +17,6 @@ export default function Footer() {
                   1234569540
                 </li>
                 <li>
-                  {" "}
                   <i className="fa fa-envelope" aria-hidden="true" />
                   <a href="#"> demo@gmail.com</a>
                 </li>
@@ -27,22 +26,22 @@ export default function Footer() {
               <h3>Menu Link</h3>
               <ul className="link_menu">
                 <li>
-                  <a href="#">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li className="active">
-                  <a href="about"> about</a>
+                  <a href="/about">About</a>
                 </li>
                 <li>
-                  <a href="room">Our Room</a>
+                  <a href="/room">Our Room</a>
                 </li>
                 <li>
-                  <a href="gallery">Gallery</a>
+                  <a href="/gallery">Gallery</a>
                 </li>
                 <li>
-                  <a href="blog">Blog</a>
+                  <a href="/blog">Blog</a>
                 </li>
                 <li>
-                  <a href="contact">Contact Us</a>
+                  <a href="/contact">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -87,11 +86,11 @@ export default function Footer() {
             <div className="row">
               <div className="col-md-10 offset-md-1">
                 <p>
-                  © 2019 All Rights Reserved. Design by{" "}
+                  © 2019 All Rights Reserved. Design by
                   <a href="https://html.design/"> Free Html Templates</a>
                   <br />
                   <br />
-                  Distributed by{" "}
+                  Distributed by
                   <a href="https://themewagon.com/" target="_blank">
                     ThemeWagon
                   </a>
