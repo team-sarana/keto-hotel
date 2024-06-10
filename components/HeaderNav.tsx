@@ -1,8 +1,9 @@
+"use client";
 import React from "react";
 
-export default function Header() {
+const HeaderNav = () => {
   return (
-    <header>
+    <>
       {/* header inner */}
       <div className="header">
         <div className="container">
@@ -11,13 +12,14 @@ export default function Header() {
               <div className="full">
                 <div className="center-desk">
                   <div className="logo">
-                    <a href="index">
-                      <img src="/images/logo.png" alt="#" />
+                    <a href="/">
+                      <img src="/images/logo.png" alt="Logo" />
                     </a>
                   </div>
                 </div>
               </div>
             </div>
+
             <div className="col-xl-9 col-lg-9 col-md-9 col-sm-9">
               <nav className="navigation navbar navbar-expand-md navbar-dark ">
                 <button
@@ -32,34 +34,34 @@ export default function Header() {
                   <span className="navbar-toggler-icon" />
                 </button>
                 <div className="collapse navbar-collapse" id="navbarsExample04">
-                  <ul className="navbar-nav mr-auto">
+                  <ul className="navbar-nav">
                     <li className="nav-item ">
-                      <a className="nav-link" href="index">
+                      <a className="nav-link" href="/">
                         Home
                       </a>
                     </li>
                     <li className="nav-item active">
-                      <a className="nav-link" href="about">
+                      <a className="nav-link" href="/about">
                         About
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="room">
+                      <a className="nav-link" href="/room">
                         Our room
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="gallery">
+                      <a className="nav-link" href="/gallery">
                         Gallery
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="blog">
+                      <a className="nav-link" href="/blog">
                         Blog
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="contact">
+                      <a className="nav-link" href="/contact">
                         Contact Us
                       </a>
                     </li>
@@ -70,6 +72,8 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
-}
+};
+
+export default HeaderNav;
